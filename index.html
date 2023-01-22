@@ -6,336 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Tenor+Sans&display=swap" rel="stylesheet">
-	<title>Noiceland +</title>
-	<style>
-        *{
-            margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-            font-family: 'Tenor Sans', sans-serif;
-        }
-        body{
-            width: 1440px;
-            margin-right: auto;
-            margin-left: auto;
-
-        }
-        header{
-            border-bottom: 1px solid #E6E6E6;
-        }
-        .menu{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 120px;
-            margin-left: 118px;
-            margin-right: 120px;
-        }
-        header nav ul{
-            list-style: none;
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-        header nav ul a{
-            text-decoration: none;
-            color: #000000;
-        }
-        header nav ul a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-        }
-        .main_block_title{
-            box-sizing: border-box;
-            display: flex;
-            margin: 59px 120px 60px 118px;
-        }
-        .main_block_title .title_photo{
-            width: 721px;
-            height: 474px;
-        }
-        .main_block_title .title_photo a{
-            display: inline-block;
-        }
-        .main_block_title .title_photo a:hover{
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            transition: 200ms;
-        }
-        .title_content{
-            width: 429px;
-            margin-left: 51px;
-        }
-        .title_content h1 {
-            margin-top: 18px;
-            margin-bottom: 27px;
-        }
-        .title_content h1 a{
-            text-transform: uppercase;
-            color: #000000;
-            text-decoration: none;
-            margin-top: 18px;
-            margin-bottom: 27px;
-        }
-        .title_content h1 a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-        }
-        .title_content .content{
-            margin-top: 0;
-            margin-bottom: 28px;
-        }
-        .title_content .content a{
-            color: #666666;
-            font-size: 16px;
-            text-decoration: none;
-            margin-top: 0;
-            margin-bottom: 28px;
-        }
-        .title_content .content a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-        }
-        .category a{
-            font-family: 'Libre Franklin', sans-serif;
-            text-transform: uppercase;
-            color: #999999;
-            font-size: 10px;
-            text-decoration: none;
-        }
-        .category a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-        }
-        .author a{
-            font-family: 'Libre Franklin', sans-serif;
-            text-transform: uppercase;
-            color: #000000;
-            text-decoration: none;
-            font-size: 10px;
-            font-weight: bold;
-            margin-top: 0;
-        }
-        .author a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-        }    
-        .main_block{
-            margin-left: 120px;
-            margin-right: 120px;   
-            display: grid;
-            grid-template-columns: repeat(3, 387px);
-            grid-template-rows: repeat(2, 1fr);
-            column-gap: 20px;
-            row-gap: 50px;
-            
-        }
-        .main_block img{
-            margin-bottom: 36px;
-            width: 387px;
-            height: 254px;
-        }
-        .main_block a img{
-            display: inline-block;
-        }
-        .main_block a img:hover{
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            transition: 200ms;
-        }
-        h3{
-            margin-top: 18px;
-            margin-bottom: 15px;
-        }
-        h3 a{
-            text-transform: uppercase;
-            font-size: 20px;
-            line-height: 24px;
-            text-decoration: none;
-            color: #000000;
-        }
-        h3 a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-        }
-        .border_page{
-            border-top: 1px solid #E6E6E6;
-            width: 1200px;
-            margin: 90px 120px 0 120px;
-           
-        }
-        .border_page p{
-            font-family: 'Libre Franklin', sans-serif;
-            text-transform: uppercase;
-            color: #999999;
-            font-size: 10px;
-            margin-top: 90px;
-            margin-bottom: 30px;
-        }
-        .latest_post{
-            margin-left: 120px;
-            margin-right: 120px;   
-            display: grid;
-            grid-template-columns: repeat(4, 285px);
-            grid-template-rows: repeat(2, 1fr);
-            column-gap: 20px;
-            row-gap: 50px;
-        }
-         .latest_post img{
-            width: 285px;
-            height: 187px;
-            margin-bottom: 25px;
-         }
-         .latest_post a img{
-            display: inline-block;
-         }
-         .latest_post a img:hover{
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            transition: 200ms;
-         }
-         .view_button{
-            margin: 90px 617px 0 618px;
-            width: 205px;
-            height: 54px;
-         }
-         .view_button button{
-            background-color: white;
-            text-transform: uppercase;
-            font-size: 10px;
-            font-family: 'Libre Franklin', sans-serif;
-            border: 1px solid #000000;
-            padding: 21px 26px;
-         }
-         .view_button button:hover{
-            border: 1px solid #464545;
-            background-color: #646363;
-            transition: 200ms;
-         }
-         .fuatered_post{
-            margin: 0px 120px 90px 120px;
-            display: grid;
-            grid-template-columns: repeat(2, 590px);
-            grid-template-rows: repeat(2, 1fr);
-            column-gap: 20px;
-            row-gap: 50px;
-         }
-         .fuatered_post img{
-            width: 590px;
-            height: 387px;
-            margin-bottom: 25px;
-         }
-         .fuatered_post a img{
-            display: inline-block;
-         }
-         .fuatered_post a img:hover{
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            transition: 200ms;
-         }
-         .footer{
-            background-color: #141414;
-            padding-bottom: 90px;
-         }
-         .footer_head{
-            width: 1200px;
-            margin: 93px 120px 0px 120px;
-            padding-bottom: 62px;
-            border-bottom: 1px solid #4D4D4D;
-            display: inline-flex;
-         }
-         .footer_head  p{
-            color: #666666;
-            font-family: 'Libre Franklin', sans-serif;
-            text-transform: uppercase;
-            font-size: 10px;
-            padding-left: 15px;
-            padding-top: 6px;
-         }
-         .footer_menu_items {
-            display: grid;
-            grid-template-columns: repeat(4, 133px);
-            grid-template-rows: repeat(2, 1fr);
-            column-gap: 116px;
-            row-gap: 15px;
-            
-         }
-         .footer_menu_items a{
-            color: #FFFFFF;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 14px;
-            text-decoration: none;
-         }
-         .footer_menu_items a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-         }
-         .footer_menu_f{
-            margin-left: 120px;
-            margin-right: 120px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-         }
-         .footer_menu_f h6{
-            color: #666666;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 10px;
-            text-transform: uppercase;
-            margin-top: 60px;
-            margin-bottom: 20px;
-         }
-         
-         .footer_menu_subcribe form{
-            display: inline-flex;
-         }
-         .footer_menu_subcribe input[type="email"]{
-            color: #666666;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 10px;
-            text-transform: uppercase;
-            padding: 18px 24px;
-         }
-         .footer_menu_subcribe input[type="submit"]{
-            background-color: #000000;
-            color: #FFFFFF;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 10px;
-            text-transform: uppercase;
-            padding: 18px 24px;
-         }
-         .footer_menu_s{
-            margin: 70px 120px 0px 120px;
-            display: grid;
-            grid-template-columns: repeat(3, 147px);
-            grid-template-rows: repeat(4, 1fr);
-            column-gap: 102px;
-            row-gap: 15px;
-         }
-         /*.footer_menu_s grid-columns:first-line{  
-            color: #666666;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 10px;
-            text-transform: uppercase;
-         }*/
-         .footer_menu_s_title{
-            color: #666666;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 10px;
-            text-transform: uppercase;
-         }
-         .footer_menu_s a{
-            color: #FFFFFF;
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 14px;
-            text-decoration: none;
-         }
-         .footer_menu_s a:hover{
-            text-decoration: underline;
-            transition: 200ms;
-         }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">	
+    <title>Noiceland +</title>
+	
 </head>
 
 <body>
@@ -356,7 +31,7 @@
     <main>
         <div class="main_block_title">
             <div class="title_photo">
-            <a href="#full_article"><img src="photo/main_photo.jpg"></a>
+            <a href="#full_article"><img src="photo/main_photo.jpg" alt="Japan House"></a>
             </div>
             <div class="title_content">
                 <p class="category"><a href="#category">Illusration</a></p>
@@ -369,41 +44,41 @@
 
         <div class="main_block">
             <div class="block">
-                <a href="#full_article"><img src="photo/bridge.jpg"></a>
+                <a href="#full_article"><img src="photo/bridge.jpg" alt="Helmut Lang"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Helmut Lang celebrates <br> taxi drivers worldwide in <br> 
                     latest campaign</a></h3>
                 <p class="author"><a href="#by_author">BY Alessandra Ortiz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/lanch.jpg"></a>
+                <a href="#full_article"><img src="photo/lanch.jpg" alt="Bowlcut launch"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Bowlcut launch a new<br> summer collection that pays<br> 
                     homage to “UK legends”</a></h3>
                 <p class="author"><a href="#by_author">BY Rosanna Ondricka</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/warhol.jpg"></a>
+                <a href="#full_article"><img src="photo/warhol.jpg" alt="Andy Warhol"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Thousands of previously<br> unseen photographs by Andy<br> Warhol will be made public<br>
                      this Autumn</a></h3>
                 <p class="author"><a href="#by_author">BY Annie Lueilwitz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/furniture.jpg"></a>
+                <a href="#full_article"><img src="photo/furniture.jpg" alt="storytelling furniture"></a>
                 <p class="category"><a href="#category">Interactive Design</a></p>
                 <h3><a href="#full_article">London-based Yinka Ilori’s<br> storytelling furniture</a></h3>
                 <p class="author"><a href="#by_author">BY Annie Lueilwitz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/broken_fingaz.jpg"></a>
+                <a href="#full_article"><img src="photo/broken_fingaz.jpg" alt="Broken Fingaz"></a>
                 <p class="category"><a href="#category">Graphic Design</a></p>
                 <h3><a href="#full_article">Anonymous Israeli art<br> collective Broken Fingaz<br>
                      direct music video for U2<br> and Beck</a></h3>
                 <p class="author"><a href="#by_author">BY Simeon Brekke</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/saroff.jpg"></a>
+                <a href="#full_article"><img src="photo/saroff.jpg" alt="Suzanne Saroff’s photo"></a>
                 <p class="category"><a href="#category">Architecture</a></p>
                 <h3><a href="#full_article">Suzanne Saroff’s meticulously arranged photographs alter
                      perceptions</a></h3>
@@ -417,54 +92,54 @@
         
         <div class="latest_post">
             <div class="block">
-                <a href="#full_article"><img src="photo/main_photo.jpg"></a>
+                <a href="#full_article"><img src="photo/main_photo.jpg" alt="Japan House"></a>
                 <p class="category"><a href="#category">Illusration</a></p>
                 <h3><a href="#full_article">Japan House opens in mountainside to foster peak creativity.</a></h3>
                 <p class="author"><a href="#by_author">BY Reta Torphy</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/bridge.jpg"></a>
+                <a href="#full_article"><img src="photo/bridge.jpg" alt="Helmut Lang"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Helmut Lang celebrates taxi drivers worldwide in latest 
                     campaign</a></h3>
                 <p class="author"><a href="#by_author">BY Alessandra Ortiz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/lanch.jpg"></a>
+                <a href="#full_article"><img src="photo/lanch.jpg" alt="Bowlcut launch"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Bowlcut launch a new summer collection that pays homage 
                     to “UK legends”</a></h3>
                 <p class="author"><a href="#by_author">BY Rosanna Ondricka</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/warhol.jpg"></a>
+                <a href="#full_article"><img src="photo/warhol.jpg" alt="Andy Warhol"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Thousands of previously unseen photographs by Andy Warhol will be made public
                      this Autumn</a></h3>
                 <p class="author"><a href="#by_author">BY Annie Lueilwitz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/furniture.jpg"></a>
+                <a href="#full_article"><img src="photo/furniture.jpg" alt="storytelling furniture"></a>
                 <p class="category"><a href="#category">Interactive Design</a></p>
                 <h3><a href="#full_article">London-based Yinka Ilori’s storytelling furniture</a></h3>
                 <p class="author"><a href="#by_author">BY Annie Lueilwitz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/broken_fingaz.jpg"></a>
+                <a href="#full_article"><img src="photo/broken_fingaz.jpg" alt="Broken Fingaz"></a>
                 <p class="category"><a href="#category">Graphic Design</a></p>
                 <h3><a href="#full_article">Anonymous Israeli art collective Broken Fingaz direct music
                      video for U2 and Beck</a></h3>
                 <p class="author"><a href="#by_author">BY Simeon Brekke</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/saroff.jpg"></a>
+                <a href="#full_article"><img src="photo/saroff.jpg" alt="Suzanne Saroff’s photo"></a>
                 <p class="category"><a href="#category">Architecture</a></p>
                 <h3><a href="#full_article">Suzanne Saroff’s meticulously arranged photographs alter
                      perceptions</a></h3>
                 <p class="author"><a href="#by_author">BY Reta Torphy</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/ambasna.jpg"></a>
+                <a href="#full_article"><img src="photo/ambasna.jpg" alt="Anu Ambasna’s illustrations"></a>
                 <p class="category"><a href="#category">Graphic Design</a></p>
                 <h3><a href="#full_article">Anu Ambasna’s playful illustrations celebrate club culture, brown bodies and 
                     perfect paunches</a></h3>
@@ -481,26 +156,26 @@
 
         <div class="fuatered_post">
             <div class="block">
-                <a href="#full_article"><img src="photo/football.jpg"></a>
+                <a href="#full_article"><img src="photo/football.jpg" alt="History of the Logo"></a>
                 <p class="category"><a href="#category">Graphic Design</a></p>
                 <h3><a href="#full_article">A Brief History of the FIFA World Cup Logo</a></h3>
                 <p class="author"><a href="#by_author">BY Clem Onojeghuo</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/shoplifters.jpg"></a>
+                <a href="#full_article"><img src="photo/shoplifters.jpg" alt="guide to LA’s graphic design"></a>
                 <p class="category"><a href="#category">Graphic Design</a></p>
                 <h3><a href="#full_article">Need a guide to LA’s graphic design scene? Shoplifters’ new
                      issue has got your back</a></h3>
                 <p class="author"><a href="#by_author">BY Alessandra Ortiz</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/rowson.jpg"></a>
+                <a href="#full_article"><img src="photo/rowson.jpg" alt="Fred Rowson"></a>
                 <p class="category"><a href="#category">Photography</a></p>
                 <h3><a href="#full_article">Fred Rowson directs film for Years and Years</a></h3>
                 <p class="author"><a href="#by_author">BY Coby Gottlieb</a></p>
             </div>
             <div class="block">
-                <a href="#full_article"><img src="photo/saatchi.jpg"></a>
+                <a href="#full_article"><img src="photo/saatchi.jpg" alt="M&C Saatchi and Fontsmith"></a>
                 <p class="category"><a href="#category">Illustration</a></p>
                 <h3><a href="#full_article">M&C Saatchi and Fontsmith collaborate on font collection
                      for House of St Barnabas</a></h3>
