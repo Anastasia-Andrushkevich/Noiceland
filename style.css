@@ -451,7 +451,7 @@ h3 a:hover{
         row-gap: 15px;
      }
      .footer_menu_s{
-        column-gap: 38px;
+        column-gap: 0;
      }
      .footer_menu_subcribe input[type="submit"]{
         padding: 18px 71px;
